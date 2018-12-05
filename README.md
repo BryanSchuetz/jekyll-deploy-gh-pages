@@ -13,7 +13,7 @@ A GitHub Action for building and deploying a Jekyll repo back to its `gh-pages` 
 
 ## Examples
 
-```json
+```hcl
 workflow "Deploy Site" {
   on = "push"
   resolves = ["Build and Deploy Jekyll"]
