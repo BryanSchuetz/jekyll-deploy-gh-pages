@@ -1,0 +1,1 @@
+A GitHub Action for building and deploying Jekyll sites back to the repos gh-pages branch. Why not just let GitHub build it? Becaues this way we can use our own custom plugins and build scripts.
