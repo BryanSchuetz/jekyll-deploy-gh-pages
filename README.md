@@ -25,8 +25,9 @@ action "Build and Deploy Jekyll" {
 }
 ```
 
-Clones the repo, builds the site, and commits it back to the gh-pages branch of the repository. Be sure that any custom gems needed are included in the Gemfile.
+Clones the repo, builds the site, and commits it back to the gh-pages branch of the repository.
 
 ## Caveats
 
 * `destination:` should be set to `./build` in your _config.yml file—as God demands.
+* Be sure that any custom gems needed are included in your Gemfile.
