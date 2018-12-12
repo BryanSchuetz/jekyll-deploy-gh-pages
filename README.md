@@ -32,3 +32,4 @@ Clones the repo, builds the site, and commits it back to the gh-pages branch of 
 * Needs a .gemfile
 * `destination:` should be set to `./build` in your _config.yml file—as God demands.
 * Be sure that any custom gems needed are included in your Gemfile.
+* If you're looking to seperate out the build/deploy steps of this action so you can put your own in betwee, look at the limited build and deploy actions in this rpo.
