@@ -29,5 +29,6 @@ Clones the repo, builds the site, and commits it back to the gh-pages branch of 
 
 ## Caveats
 
+* Needs a .gemfile
 * `destination:` should be set to `./build` in your _config.yml file—as God demands.
 * Be sure that any custom gems needed are included in your Gemfile.
