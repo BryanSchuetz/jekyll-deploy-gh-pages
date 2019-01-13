@@ -11,7 +11,6 @@ LABEL "com.github.actions.icon"="globe"
 LABEL "com.github.actions.color"="green"
 
 LABEL "repository"="http://github.com/BryanSchuetz/jekyll-deploy-gh-pages"
-LABEL "homepage"="http://github.com/BryanSchuetz/jekyll-deploy-gh-pages"
 
 ADD entrypoint.sh /entrypoint.sh
 
