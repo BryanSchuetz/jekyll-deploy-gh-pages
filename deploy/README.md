@@ -8,6 +8,7 @@ We're only deploying the site here. Site files should be sitting in `build` havi
 ## Environment Variables
 * `GITHUB_ACTOR`: Username of repo owner or object intiating the action (GitHub Provides)
 * `GITHUB_REPO`: Owner/Repository (GitHub Provides)
+* `BRANCH`: The branch to deploy to
 
 ## Examples
 
