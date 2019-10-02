@@ -1,3 +1,6 @@
+
+> **This action has to be updated from the original beta version of actions to the new beta version, hopefully this will happen soon.
+
 # A GitHub Action for Custom Jekyll Builds on GitHub Pages
 
 A GitHub Action for building and deploying a Jekyll repo back to its `gh-pages` branch. 
