@@ -13,7 +13,6 @@ LABEL "com.github.actions.color"="green"
 LABEL "repository"="http://github.com/BryanSchuetz/jekyll-deploy-gh-pages"
 
 ADD entrypoint.sh /entrypoint.sh
-ADD Gemfile /Gemfile
 
 
 ENTRYPOINT ["/entrypoint.sh"]
