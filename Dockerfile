@@ -5,8 +5,6 @@ ENV LC_ALL C.UTF-8
 ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US.UTF-8
 
-RUN bundle install;
-
 LABEL "com.github.actions.name"="Build & Deploy to GitHub Pages"
 LABEL "com.github.actions.description"="Builds & deploys the project to GitHub Pages"
 LABEL "com.github.actions.icon"="globe"
