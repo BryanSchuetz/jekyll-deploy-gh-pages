@@ -13,16 +13,19 @@ A GitHub Action for building and deploying a Jekyll repo back to its `gh-pages` 
 
 ## Examples
 
-```hcl
-workflow "Deploy Site" {
-  on = "push"
-  resolves = ["Build and Deploy Jekyll"]
-}
+```yml
+name: Jekyll Deploy
 
-action "Build and Deploy Jekyll" {
-  uses = "BryanSchuetz/jekyll-deploy-gh-pages@master"
-  secrets = ["GITHUB_TOKEN"]
-}
+on: [push]
+
+jobs: 
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    env: 
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN}}
+    steps:
+      - name: Build & Deploy to GitHub Pages
+        uses: BryanSchuetz/jekyll-deploy-gh-pages@1.0
 ```
 
 Clones the repo, builds the site, and commits it back to the gh-pages branch of the repository.

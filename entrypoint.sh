@@ -1,6 +1,6 @@
 #!/bin/sh
 echo '👍 ENTRYPOINT HAS STARTED—INSTALLING THE GEM BUNDLE'
-bundle install > /dev/null 2>&1
+bundle install
 bundle list | grep "jekyll ("
 echo '👍 BUNDLE INSTALLED—BUILDING THE SITE'
 bundle exec jekyll build
@@ -13,8 +13,8 @@ git config user.name "${GITHUB_ACTOR}" && \
 git config user.email "${GITHUB_ACTOR}@users.noreply.github.com" && \
 git add . && \
 echo -n 'Files to Commit:' && ls -l | wc -l && \
-git commit -m'action build' > /dev/null 2>&1 && \
-git push --force $remote_repo master:$remote_branch > /dev/null 2>&1 && \
+git commit -m'action build' && \
+git push --force $remote_repo master:$remote_branch && \
 rm -fr .git && \
 cd ../
 echo '👍 GREAT SUCCESS!'
