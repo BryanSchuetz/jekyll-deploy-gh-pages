@@ -2,5 +2,5 @@
 name: jekyll-deploy-gh-pages
 description: 'Deploying your Jekyll repo back to the gh-pages branch of the same repository'
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
+  using: 'ruby2.4.0'
+  main: 'main.yml'
