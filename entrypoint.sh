@@ -1,6 +1,6 @@
 #!/bin/sh
 cd .
-ls
+ls -l
 echo '👍 ENTRYPOINT HAS STARTED—INSTALLING THE GEM BUNDLE'
 bundle install
 bundle list | grep "jekyll ("
