@@ -1,5 +1,5 @@
 
-> **This action has been updated from the first beta version of GH Actions (HCL) to the newest Beta version (YML Syntax)**
+> **This action has been updated from the first beta version of GH Actions to the new beta version of GH Actions. See below for the new structure required in your workflow.**
 
 # A GitHub Action for Custom Jekyll Builds on GitHub Pages
 
@@ -34,12 +34,12 @@ jobs:
         uses: BryanSchuetz/jekyll-deploy-gh-pages@master
 ```
 
-Clones the repo, builds the site, and commits it back to the gh-pages branch of the repository.
+Clones the repo, builds the site, and commits it back to the gh-pages branch of the repository. That's it. Just add the above example to a `main.yml` file in the `.github/workflows` directory of your repository—see caveats below. 
 
 ## Caveats
 
 * This uses the v2 of the Actions beta—note the Yaml based workflow syntax.
-* **`GITHUB_TOKEN`, privilages are still being sorted out by the Actions/GH-Pages team. Changes pushed to your GH-pages branch will only be picked up by the Github Pages server if your workflow is in a private repository.**
+* **`GITHUB_TOKEN`, privileges are still being sorted out by the Actions/GH-Pages team. Changes pushed to your GH-pages branch will only be picked up by the Github Pages server if your workflow is in a private repository.**
 * Needs a .gemfile
 * `destination:` should be set to `./build` in your _config.yml file—as God demands.
 * Be sure that any custom gems needed are included in your Gemfile.
