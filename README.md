@@ -38,7 +38,7 @@ Clones the repo, builds the site, and commits it back to the gh-pages branch of 
 
 ## Caveats
 
-* This uses the v2 of the Actions beta—note the Yaml based workflow syntax.
+* This uses the v2 of the Actions beta—note the Yaml based workflow syntax—you must have access to the beta release of actions.
 * **`GITHUB_TOKEN`, privileges are still being sorted out by the Actions/GH-Pages team. Changes pushed to your GH-pages branch will only be picked up by the Github Pages server if your workflow is in a private repository.**
 * Needs a .gemfile
 * `destination:` should be set to `./build` in your _config.yml file—as God demands.
