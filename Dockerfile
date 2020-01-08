@@ -12,6 +12,8 @@ LABEL "com.github.actions.color"="green"
 
 LABEL "repository"="http://github.com/BryanSchuetz/jekyll-deploy-gh-pages"
 
+RUN apt-get update
+
 ADD entrypoint.sh /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
