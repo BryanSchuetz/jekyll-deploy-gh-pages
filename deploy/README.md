@@ -28,5 +28,4 @@ Grabs the site files in `build` and commits them to the gh-pages branch of the s
 
 ## Caveats
 
-* `destination:` should have beeen set to `./build` in your _config.yml file—as God demands.
 * Remember when adding this action to a workflow that will also use a build action, you need to define that action in the `needs` paramater.
