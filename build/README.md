@@ -25,5 +25,4 @@ Clones the repo and builds the site—that's it.
 ## Caveats
 
 * Needs a .gemfile
-* `destination:` should be set to `./build` in your _config.yml file—as God demands.
 * Be sure that any custom gems needed are included in your Gemfile.
