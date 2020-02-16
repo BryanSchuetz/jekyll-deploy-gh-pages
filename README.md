@@ -5,7 +5,7 @@
 
 A GitHub Action for building and deploying a Jekyll repo back to its `gh-pages` branch. 
 
-**Why not just let GitHub Pages build it? Becaues this way we can use our own custom Jekyll plugins and build scripts.**
+**Why not just let GitHub Pages build it? Because this way we can use our own custom Jekyll plugins and build scripts.**
 
 ## Secrets
 * `GITHUB_TOKEN`: Access key scoped to the repository, we need this to push the site files back to the repo. (specify in workflow)
