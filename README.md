@@ -8,7 +8,7 @@ A GitHub Action for building and deploying a Jekyll repo back to its `gh-pages` 
 **Why not just let GitHub Pages build it? Because this way we can use our own custom Jekyll plugins and build scripts.**
 
 ## Secrets
-* `GITHUB_TOKEN`: An access key which scoped to the repository - we need this to push the built site files back to the repo. This is generated for you on each workflow run - see usage in [example](#example). (GitHub Provides)
+* `GITHUB_TOKEN`: An access key which scoped to the repository - we need this to push the built site files back to the repo. This is generated for you on each workflow run——see usage in [example](#example). (GitHub Provides)
   
 ## Environment Variables
 * `GITHUB_ACTOR`: Username of repo owner or object initiating the action (GitHub Provides)
@@ -34,9 +34,9 @@ jobs:
         uses: BryanSchuetz/jekyll-deploy-gh-pages@master
 ```
 
-Clones the repo, builds the site, and commits it back to the `gh-pages` branch of the repository. That's it. Just add the above example to a `main.yml` file in the `.github/workflows` directory of your repository — see caveats below. 
+Clones the repo, builds the site, and commits it back to the `gh-pages` branch of the repository. That's it. Just add the above example to a `main.yml` file in the `.github/workflows` directory of your repository—see caveats below. 
 
 ## Caveats
 
-* `destination:` should be set to `./build` in your `_config.yml` file — as God demands.
+* `destination:` should be set to `./build` in your `_config.yml` file—as God demands.
 * A `Gemfile` is required. This must include `jekyll` and any other custom gems.
