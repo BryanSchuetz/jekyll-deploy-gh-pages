@@ -5,6 +5,7 @@ ENV RUBYGEMS_VERSION=2.7.0
 ENV LC_ALL C.UTF-8
 ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US.UTF-8
+ENV JEKYLL_ENV=production
 
 LABEL "com.github.actions.name"="Builds to GitHub Pages"
 LABEL "com.github.actions.description"="Builds the project to GitHub Pages"
